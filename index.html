@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo"> <img src="Logo.png" alt="logo"></h1>
+    </header>
+  
+    <main>
+        <textarea type="text" class="text-area ingresar-texto" id="textoI" placeholder="Ingresar texto aqui"></textarea>
+        <section class="mostrarTexto">
+            <div class="contenedor-texarea">
+                <img id="miImagen" class="posicion-img" src="Muñeco.png" alt="Persona buscando texto">
+                <textarea class="mensaje texto-codificado" id="" cols="30" rows="10"></textarea>
+                <div class="mensaje-textarea">
+                    <p id="ningunMensaje">Ningún mensaje fue encontrado</p>
+                </div>
+                <div class="botonCopiar">
+                    <button class="copiar boton" onclick="copiar()">Copiar</button>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section class="botones">
+            <button class="encriptar boton botonEncriptar" onclick="encriptar()">Encriptar</button>
+            <button class="desencriptar boton botonDesencriptar" onclick="desencriptar()">Desencriptar</button>
+                  
+        </section>
+    </main>
+
+    <footer class="pieDepagina">
+        <p class="copyright">&copy Copyright Jhon Flores</p>
+    </footer>
+
+    <script src="js/javaScript.js"></script>
+
+</body>
+</html>
